@@ -12,7 +12,7 @@ export const Carousel = () => {
       <h2>Section</h2>
       <Container>
         { products.map((item, index) => 
-          <CarouselItem key={index} {...item} />
+          <CarouselItem id={index} key={index} {...item} />
           ) }
       </Container>
     </div>
