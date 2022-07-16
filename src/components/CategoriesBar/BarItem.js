@@ -3,12 +3,13 @@ import { Link } from '@reach/router'
 
 export const BarItem = (props) => {
 
-  const { name, image, id } = props
+  const { name, id } = props
 
   return (
     <Link to={`category/${id}`}>
         <p>{name}</p>
-        <img src={image} alt='' />
+        <img src='' alt='' />
+        {/* {console.log(item.list[0])} */}
     </Link>
   )
 }

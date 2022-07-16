@@ -1,6 +1,4 @@
 import React, { useEffect } from 'react'
-import { Carousel } from '../../components/Carousel'
-import { CategoriesBar } from '../../components/CategoriesBar'
 import { getListOfCategories } from '../../api/get'
 import { useDispatch } from 'react-redux'
 import { setInitialState } from '../../actions'
@@ -16,8 +14,7 @@ export const Home = () => {
 
   return (
     <main>
-      <CategoriesBar />
-      <Carousel />
+      Home
     </main>
   )
 }
